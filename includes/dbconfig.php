@@ -8,7 +8,7 @@ $serviceAccount = (new Factory)->withServiceAccount(__DIR__ . '/potholedetection
 
 
 $firebase = (new Factory())
-    ->withDatabaseUri('');
+    ->withDatabaseUri('https://potholedetection-f30ba-default-rtdb.firebaseio.com');
    
 
     

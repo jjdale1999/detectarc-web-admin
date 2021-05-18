@@ -33,16 +33,10 @@
               <p>Maps</p>
             </a>
           </li>
-          <li>
-            <a href="./notifications.html">
-              <i class="nc-icon nc-bell-55"></i>
-              <p>Search</p>
-            </a>
-          </li>
+          
          
-            
           <li class="active-pro">
-            <a href="./upgrade.html">
+            <a href="../plugin/index.php">
               <i class="nc-icon nc-spaceship"></i>
               <p >Logout</p>
             </a>

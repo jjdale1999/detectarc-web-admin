@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="../assets/css/form-style-z.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/css/login.css" rel="stylesheet" type="text/css"/>
+
 	<title>Ajax base sign in & sign up form</title>
 
 </head>
@@ -17,14 +19,14 @@
 	<div class="container">
 		<div class="mt-2 mb-4">
 			<div class="col-xs-12 col-sm-8 col-md-6 ml-auto mr-auto">
-				<ul class="nav nav-pills nav-fill mb-1" id="pills-tab" role="tablist">
-					<li class="nav-item"> <a class="nav-link active" id="pills-signin-tab" data-toggle="pill" href="#pills-signin" role="tab" aria-controls="pills-signin" aria-selected="true">Sign In</a> </li>
-					<li class="nav-item"> <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">Sign Up</a> </li>
-				</ul>
+				
 				<div class="tab-content" id="pills-tabContent">
 					<div class="tab-pane fade show active" id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
 						<div class="col-sm-12 border border-primary shadow rounded bg-white pt-2">
-							<div class="text-center"><img src="../assets/img/logo-small.png" class="rounded-circle border p-1" id="login_logo"></div>
+							<div class="text-center">
+								<img src="../assets/img/detectarclogo.png" class="rounded-circle border p-1" id="loginlogo">
+								
+							</div>
 							<em id="signInMsg"></em>
 							<form id="singninFrom">
 								<div class="form-group">
@@ -46,36 +48,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
-						<div class="col-sm-12 border border-primary shadow rounded bg-white pt-2">
-							<div class="text-center"><img src="../assets/img/logo-small.png" class="rounded-circle border p-1" id="login_logo"></div>
-							<em id="signUpMsg"></em>
-							<form method="post" id="singnupFrom" onSubmit="return false;">
-								<div class="form-group">
-									<label class="font-weight-bold">Email <span class="text-danger">*</span></label>
-									<input type="email" name="signupemail" id="signupemail" class="form-control form-control-lg" placeholder="Enter valid email" data-required>
-								</div>
-								<div class="form-group">
-									<label class="font-weight-bold">User Name <span class="text-danger">*</span></label>
-									<input type="text" name="signupusername" id="signupusername" class="form-control form-control-lg" placeholder="This will be your login name" data-required>
-								</div>
-								<div class="form-group">
-									<label class="font-weight-bold">Password <span class="text-danger">*</span></label>
-									<input type="password" name="signuppassword" id="signuppassword" class="form-control form-control-lg" placeholder="*********" data-required>
-								</div>
-								<div class="form-group">
-									<label class="font-weight-bold">Confirm Password <span class="text-danger">*</span></label>
-									<input type="password" name="signupcpassword" id="signupcpassword" class="form-control form-control-lg" placeholder="*********" data-required>
-								</div>
-								<div class="form-group">
-									<label><input type="checkbox" name="signupcondition" id="signupcondition" value="1" data-required> I agree with the <a href="javascript:;">Terms &amp; Conditions.</a></label>
-								</div>
-								<div class="form-group">
-									<button type="submit" name="signupSubmit" id="signupSubmit" value="Sign Up" class="btn btn-block btn-primary" onClick="formValidate('#singnupFrom','#signUpMsg');"><i class="fa fa-fw fa-sign-out-alt"></i> Sign Up</button>
-								</div>
-							</form>
-						</div>
-					</div>
+					
 				</div>
 			</div> <!--/.col-xs-12 col-sm-8 col-md-6 col-lg-4-->
 			

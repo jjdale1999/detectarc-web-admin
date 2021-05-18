@@ -1,13 +1,8 @@
 <?php
-
 include("../includes/header.php");
 include("../includes/sidebar.php");
 include("../includes/nav.php");
 include("get_data.php");
-
-
-
-
 ?>
 
 <div class="content" id="content">
@@ -93,20 +88,7 @@ include("get_data.php");
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-12">
-            <div class="card ">
-              <div class="card-header ">
-                <h5 class="card-title">App Users Behavior</h5>
-                <p class="card-category">24 Hours performance</p>
-              </div>
-              <div class="card-body ">
-                <canvas id=chartHours width="400" height="100"></canvas>
-              </div>
-             
-            </div>
-          </div>
-        </div> -->
+      
         <div class="row">
           <div class="col-md-6">
             <div class="card ">
@@ -118,9 +100,7 @@ include("get_data.php");
           <div id="donutchart" ></div>
 
         </div>
-              <!-- <div class="card-body ">
-                <canvas id="chartEmail"></canvas>
-              </div> -->
+              
               <div class="card-footer ">
                 <hr>
                 <div class="stats">

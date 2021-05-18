@@ -8,26 +8,15 @@
 function update_rec($Postdata,$key){
     include("../includes/dbconfig.php");
 
-
-//     $uid = 'some-user-id';
-//     $postData = [
-//     'title' => 'My awesome post title',
-//     'body' => 'This text should be longer',
-//     ];
-
-// // Create a key for a new post
-// $newPostKey = $database->getReference('posts')->push()->getKey();
-
-// $updates = [
-//     'posts/'.$newPostKey => $postData,
-//     'user-posts/'.$uid.'/'.$newPostKey => $postData,
-// ];
-
-// $database->getReference() // this is the root reference
-//    ->update($updates);
-
-
 $reference = $database->getReference("potholes")->getChild($key)->update($Postdata);
+
+}
+
+
+function update_nwa_agent($Postdata,$key,$potholekey,$usertype){
+    include("../includes/dbconfig.php");
+
+$reference = $database->getReference($usertype)->getChild($key)->getChild($potholekey)->update($Postdata);
 
 }
 

@@ -137,3 +137,9 @@ a.socialIcon:hover,
     transition: all 0.8s;
     transition: all 0.8s
 }
+
+
+#loginlogo{
+    width:150px;
+    height:150px;
+}
